@@ -1,12 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
 }
 main {
     flex: 1;
-    padding-bottom: 50px; /* Adjust this value if needed */
+    padding: 20px; /* Adjust this value if needed */
 }
 header {
     background-color: #333;
@@ -71,10 +73,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px; /* Ajusta la separación desde la parte superior */
 }
+
+/* Añade espacio adicional desde la parte inferior para evitar solapamiento con la sección de contacto */
+#contact {
+    margin-bottom: 100px;
+}
+
 
 h1 {
     color: #f4f4f4;
@@ -144,6 +150,77 @@ h1 {
     width: 0;
     transition: width 2s ease-in-out;
 }
+
+/* Proyectos */
+#projects {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #218838;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alinea los proyectos a la izquierda */
+    gap: 20px; /* Espacio entre los proyectos */
+}
+
+.project-item {
+    width: calc(33.333% - 20px); /* Calcula el ancho de cada proyecto */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.project-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0077b5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-item .btn:hover {
+    background-color: #0077b5;
+    color: #fff;
+}
+
 
 /*Contacto*/
 .contact-buttons {
