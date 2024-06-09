@@ -6,10 +6,6 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 }
-main {
-    flex: 1;
-    padding: 20px; /* Adjust this value if needed */
-}
 header {
     background-color: #333;
     color: #fff;
@@ -17,7 +13,6 @@ header {
     text-align: center;
     position: relative;
 }
-
 .header-image {
     width: 150px;
     height: 150px;
@@ -25,18 +20,15 @@ header {
     object-fit: cover;
     margin-bottom: 1rem;
 }
-
 nav {
     margin: 1rem 0;
     text-align: center;
 }
-
 nav a {
     margin: 0 1rem;
     color: #333;
     text-decoration: none;
 }
-
 section {
     padding: 2rem;
     max-width: 800px;
@@ -44,13 +36,11 @@ section {
     background-color: #fff;
     margin-bottom: 1rem;
 }
-
 h1, h2 {
     color: #333;
     margin-top: 1rem;
     white-space: nowrap;
 }
-
 .btn-download {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -61,7 +51,6 @@ h1, h2 {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
 .btn-download:hover {
     background-color: #218838;
 }
@@ -73,76 +62,74 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 20px; /* Ajusta la separación desde la parte superior */
+    margin-top: 20px;
+    /* Ajusta la separación desde la parte superior */
 }
-
 /* Añade espacio adicional desde la parte inferior para evitar solapamiento con la sección de contacto */
 #contact {
     margin-bottom: 100px;
 }
-
-
 h1 {
     color: #f4f4f4;
 }
-
 .typewriter-container {
     text-align: center;
-    height: 2.5rem; /* Asegura que el contenedor tiene una altura fija */
+    height: 2.5rem;
+    /* Asegura que el contenedor tiene una altura fija */
 }
-
 .intro-text,
 #typewriter {
     display: inline-block;
-    vertical-align: middle; /* Alinea verticalmente los elementos */
+    vertical-align: middle;
+    /* Alinea verticalmente los elementos */
 }
 .intro-text {
-    font-size: 2.0rem; /* Tamaño de fuente */
-    margin-right: 0.3rem; /* Espacio entre "Hola soy," y el nombre */
-    margin-bottom: -3; /* Elimina el margen inferior para evitar espacio adicional */
+    font-size: 2.0rem;
+    /* Tamaño de fuente */
+    margin-right: 0.3rem;
+    /* Espacio entre "Hola soy," y el nombre */
+    margin-bottom: -3;
+    /* Elimina el margen inferior para evitar espacio adicional */
 }
-
 #typewriter {
-    font-size: 2.0rem; /* Tamaño de fuente */
+    font-size: 2.0rem;
+    /* Tamaño de fuente */
     position: relative;
 }
-
 .typewriter-text, .cursor {
-    display: inline-block; /* Asegura que el texto animado y el cursor están en línea */
-    vertical-align: middle; /* Alineación vertical media */
+    display: inline-block;
+    /* Asegura que el texto animado y el cursor están en línea */
+    vertical-align: middle;
+    /* Alineación vertical media */
 }
-
 .cursor {
-    border-right: 0.15em solid orange; /* Efecto de cursor */
+    border-right: 0.15em solid orange;
+    /* Efecto de cursor */
     animation: blink-caret 0.75s step-end infinite;
 }
-
 @keyframes blink-caret {
-    from, to { border-color: transparent; } /* Cursor transparente */
-    50% { border-color: orange; } /* Color del cursor */
+    from, to { border-color: transparent; }
+    /* Cursor transparente */
+    50% { border-color: orange; }
+    /* Color del cursor */
 }
-
 #skills {
     padding: 2rem;
     background-color: #fff;
 }
-
 .skill {
     margin-bottom: 1rem;
 }
-
 .skill-name {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
-
 .skill-bar {
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
     position: relative;
 }
-
 .skill-level {
     background-color: #28a745;
     height: 1.5rem;
@@ -150,56 +137,50 @@ h1 {
     width: 0;
     transition: width 2s ease-in-out;
 }
-
 /* Proyectos */
 #projects {
     text-align: center;
     padding: 50px 0;
     background-color: #f1f1f1;
 }
-
 #projects h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: #218838;
 }
-
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Alinea los proyectos a la izquierda */
-    gap: 20px; /* Espacio entre los proyectos */
+    justify-content: flex-start;
+    /* Alinea los proyectos a la izquierda */
+    gap: 20px;
+    /* Espacio entre los proyectos */
 }
-
 .project-item {
-    width: calc(33.333% - 20px); /* Calcula el ancho de cada proyecto */
+    width: calc(33.333% - 20px);
+    /* Calcula el ancho de cada proyecto */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
 }
-
 .project-item:hover {
     transform: translateY(-10px);
 }
-
 .project-item img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-
 .project-content {
     padding: 20px;
     text-align: left;
 }
-
 .project-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
-
 .project-item p {
     font-size: 16px;
     margin-bottom: 15px;
@@ -213,7 +194,7 @@ h1 {
     text-decoration: none;
     color: #00b51e;
     font-weight: 600;
-    transition: all
+    transition: all;
 }
 .project-item .btn2:hover {
     background-color: #1eb500;
@@ -229,20 +210,16 @@ h1 {
     font-weight: 600;
     transition: all 0.3s ease;
 }
-
 .project-item .btn:hover {
     background-color: #0077b5;
     color: #fff;
 }
-
-
 /*Contacto*/
 .contact-buttons {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -253,14 +230,12 @@ h1 {
     font-size: 16px;
     transition: all 0.3s ease;
 }
-
 .btn img {
     width: 24px;
     height: 24px;
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
-
 .btn:hover {
     border-color: #000;
     background-color: #f0f0f0;
@@ -330,3 +305,44 @@ nav .menu a:hover {
     border-radius: 5px;
 }
 
+/* Estilos específicos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    .header-image {
+        width: 100px;
+        height: 100px;
+    }
+    .intro-text, #typewriter {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .typewriter-container {
+        height: auto;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+    #typewriter {
+        font-size: 1.5rem;
+    }
+    .cursor {
+        display: none; /* Oculta el cursor en pantallas pequeñas */
+    }
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .menu li {
+        margin: 10px 0;
+    }
+    .project-list {
+        justify-content: center;
+    }
+    .project-item {
+        width: calc(50% - 10px);
+    }
+}
