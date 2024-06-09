@@ -204,7 +204,21 @@ h1 {
     font-size: 16px;
     margin-bottom: 15px;
 }
-
+.project-item .btn2 {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    border: 2px solid #1eb500;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #00b51e;
+    font-weight: 600;
+    transition: all
+}
+.project-item .btn2:hover {
+    background-color: #1eb500;
+    color: #fff;
+}
 .project-item .btn {
     display: inline-block;
     padding: 10px 20px;
