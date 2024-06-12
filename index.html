@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio de Arnau Argullós</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="imagenes/arnauux.jpg" alt="Foto de Arnau Argullós" class="header-image">
-        <div class="typewriter-container">
-            <h1 class="intro-text">Hola, soy</h1>
-            <h1 id="typewriter">
-                <span class="typewriter-text"></span>
-                <span class="cursor"></span>
-            </h1>
+        <div class="header-content">
+            <img src="imagenes/arnauux.jpg" alt="Foto de Arnau Argullós" class="header-image">
+            <h1 class="name"><span class="highlight">ARNAU</span> ARGULLÓS</h1>
+            <p class="subtitle">En la ruta de ser un desarrollador web.</p>
+            <p class="welcome">BIENVENID@ A MI PORTAFOLIO COMO DESARROLLADOR TRAINEE.</p>
+            <p class="contact">Si quieres ponerte en contacto conmigo escríbeme a <a href="mailto:arnauux@icloud.com">arnauux@icloud.com</a></p>
+            <a href="docs/CV-Arnau Argullós.pdf" download class="btn-download">Descargar mi CV</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/arnauux/" class="social-link"><img src="imagenes/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://github.com/arnauuux" class="social-link"><img src="imagenes/github.svg" alt="GitHub"></a>
+                <a href="#" class="social-link"><img src="imagenes/dribbble.svg" alt="Dribbble"></a>
+                <a href="#" class="social-link"><img src="imagenes/instagram.svg" alt="Instagram"></a>
+            </div>
         </div>
-        <p class="dev">Desarrollador de Software</p>
     </header>
     <nav>
         <ul class="menu">
@@ -32,66 +34,52 @@
     <main>
         <section id="about">
             <h2>Sobre Mí</h2>
-            <p>Apasionado de todo lo relacionado con el mundo tech, especializado en desarrollo web y multiplataforma, con ganas de poder aumentar mis conocimientos y aptitudes en este sector.</p>
+            <p>Apasionado de todo lo relacionado con el mundo tech 
+                especializado en desarrollo web y multiplataforma 
+                con ganas de poder aumentar mis conocimientos y aptitudes en este sector. </p>
             <a href="docs/CV-Arnau Argullós.pdf" download class="btn-download">Descargar CV</a>
         </section>
         <section id="skills">
             <h2>Habilidades</h2>
-            <div class="skills-container">
-                <div class="skill" data-aos="fade-up">
+            <div class="skills-list">
+                <div class="skill">
                     <div class="skill-name">C</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="25%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="25%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill">
                     <div class="skill-name">Java</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="40%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill">
                     <div class="skill-name">Python</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="40%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill">
                     <div class="skill-name">Kotlin</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="50%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="50%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill">
                     <div class="skill-name">SwiftUI</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="30%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="30%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill">
                     <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="40%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill">
                     <div class="skill-name">HTML</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="60%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="60%"></div></div>
                 </div>
-                <div class="skill" data-aos="fade-up" data-aos-delay="700">
+                <div class="skill">
                     <div class="skill-name">CSS</div>
-                    <div class="skill-bar">
-                        <div class="skill-level" data-level="60%"></div>
-                    </div>
+                    <div class="skill-bar"><div class="skill-level" data-level="60%"></div></div>
                 </div>
             </div>
         </section>
         <section id="projects">
             <h2>Proyectos</h2>
             <div class="project-list">
-                <div class="project-item" data-aos="fade-up">
+                <div class="project-item">
                     <img src="imagenes/smallcity.png" alt="Proyecto Small City">
                     <div class="project-content">
                         <h3>Small City</h3>
@@ -99,36 +87,36 @@
                         <a href="https://github.com/arnauuux/smallcitydiw" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-item">
                     <img src="imagenes/speakcat.png" alt="Proyecto SpeakCat">
                     <div class="project-content">
                         <h3>SpeakCat</h3>
-                        <p>Es una plataforma interactiva y educativa para aprender el idioma catalán con diferentes niveles: básico, intermedio y avanzado.</p>
+                        <p>Es una plataforma interactiva y educativa para aprender el idioma catalán. Con diferentes franjas de nivel un basico intermedio y avanzado.</p>
                         <a href="https://github.com/arnauuux/SpeakCatDef/" class="btn">Ver en GitHub</a>
                         <a href="docs/app-release.apk" class="btn2">Descargar Android</a>
                     </div>
                 </div>
-                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-item">
                     <img src="imagenes/tetris.png" alt="Proyecto Tetris">
                     <div class="project-content">
                         <h3>Tetris</h3>
-                        <p>En este proyecto, he utilizado Java Swing para crear una interfaz gráfica.</p>
+                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
                         <a href="https://github.com/arnauuux/Tetris" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-item">
                     <img src="imagenes/tictactoe.png" alt="Proyecto TicTacToe">
                     <div class="project-content">
                         <h3>TicTacToe</h3>
-                        <p>En este proyecto, he utilizado Java Swing para crear una interfaz gráfica.</p>
+                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
                         <a href="https://github.com/arnauuux/TicTacToe" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item" data-aos="fade-up" data-aos-delay="400">
-                    <img src="imagenes/bibloteca.png" alt="Proyecto Biblioteca">
+                <div class="project-item">
+                    <img src="imagenes/biblioteca.png" alt="Proyecto Biblioteca">
                     <div class="project-content">
                         <h3>Biblioteca</h3>
-                        <p>En este proyecto, he utilizado Java Swing para crear una interfaz gráfica.</p>
+                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
                         <a href="https://github.com/arnauuux/Biblioteca" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
@@ -156,13 +144,6 @@
     <footer>
         <p>&copy; 2024 Arnau Argullós. Todos los derechos reservados.</p>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-</script>
-);
-    </script>
 </body>
 </html>
