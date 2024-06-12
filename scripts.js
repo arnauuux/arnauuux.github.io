@@ -91,3 +91,17 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 600); // Ajusta el retraso si es necesario
     });
 });
+// Función para descargar el CV (PDF)
+    function descargarCV() {
+        var enlace = document.createElement('a');
+        enlace.href = 'https://github.com/arnauuux/arnauuux.github.io/blob/main/docs/CV-Arnau%20Argull%C3%B3s.pdf';
+        enlace.download = 'CV-Arnau Argullós.pdf';
+        enlace.click();
+    }
+
+    // Asigna la función descargarCV al botón de descarga
+    const botonDescargarCV = document.getElementById("boton-descargar-cv");
+    if (botonDescargarCV) {
+        botonDescargarCV.addEventListener("click", descargarCV);
+    }
+});
