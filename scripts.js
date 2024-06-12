@@ -1,27 +1,22 @@
-const typewriterText = document.querySelector('.typewriter-text');
-const cursor = document.querySelector('.cursor');
-const textArray = ["Arnau Argullós"];
-let arrayIndex = 0;
-let charIndex = 0;
-
-function type() {
-    if (charIndex < textArray[arrayIndex].length) {
-        typewriterText.textContent += textArray[arrayIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(type, 150);
-    } else {
-        cursor.style.display = 'none';
-    }
-}
-document.addEventListener('DOMContentLoaded', () => {
-    type();
-});
-
-const skillLevels = document.querySelectorAll('.skill-level');
-
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', function () {
+    // Fill skill bars with animation
+    const skillLevels = document.querySelectorAll('.skill-level');
     skillLevels.forEach(skill => {
         const level = skill.getAttribute('data-level');
         skill.style.width = level;
+    });
+
+    // Smooth scroll for navigation
+    const menuLinks = document.querySelectorAll('nav a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop - 50,
+                behavior: 'smooth'
+            });
+        });
     });
 });
