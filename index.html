@@ -8,21 +8,17 @@
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <img src="imagenes/arnauux.jpg" alt="Foto de Arnau Argullós" class="header-image">
-            <h1 class="name"><span class="highlight">ARNAU</span> ARGULLÓS</h1>
-            <p class="subtitle">En la ruta de ser un desarrollador web.</p>
-            <p class="welcome">BIENVENID@ A MI PORTAFOLIO COMO DESARROLLADOR TRAINEE.</p>
-            <p class="contact">Si quieres ponerte en contacto conmigo escríbeme a <a href="mailto:arnauux@icloud.com">arnauux@icloud.com</a></p>
-            <a href="docs/CV-Arnau Argullós.pdf" download class="btn-download">Descargar mi CV</a>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/arnauux/" class="social-link"><img src="imagenes/linkedin.svg" alt="LinkedIn"></a>
-                <a href="https://github.com/arnauuux" class="social-link"><img src="imagenes/github.svg" alt="GitHub"></a>
-                <a href="#" class="social-link"><img src="imagenes/dribbble.svg" alt="Dribbble"></a>
-                <a href="#" class="social-link"><img src="imagenes/instagram.svg" alt="Instagram"></a>
-            </div>
+        <img src="imagenes/arnauux.jpg" alt="Foto de Arnau Argullós" class="header-image">
+        <div class="typewriter-container">
+            <h1 class="intro-text">Hola soy, </h1>
+            <h1 id="typewriter">
+                <span class="typewriter-text"></span>
+                <span class="cursor"></span>
+            </h1>
         </div>
+        <p class="dev">Desarrollador de Software</p>
     </header>
+    <main>
     <nav>
         <ul class="menu">
             <li><a href="#about">Sobre Mí</a></li>
@@ -31,115 +27,128 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="about">
-            <h2>Sobre Mí</h2>
-            <p>Apasionado de todo lo relacionado con el mundo tech 
-                especializado en desarrollo web y multiplataforma 
-                con ganas de poder aumentar mis conocimientos y aptitudes en este sector. </p>
-            <a href="docs/CV-Arnau Argullós.pdf" download class="btn-download">Descargar CV</a>
-        </section>
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <div class="skills-list">
-                <div class="skill">
-                    <div class="skill-name">C</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="25%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Java</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Python</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">Kotlin</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="50%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">SwiftUI</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="30%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="40%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">HTML</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="60%"></div></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-name">CSS</div>
-                    <div class="skill-bar"><div class="skill-level" data-level="60%"></div></div>
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Apasionado de todo lo relacionado con el mundo tech 
+            especializado en dessarollo web y multiplataforma 
+            con ganas de poder aumentar mis conocimientos y aptitudes en este sector. </p>
+        <a href="docs/CV-Arnau Argullós.pdf" download class="btn-download">Descargar CV</a>
+    </section>
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <div class="skill-name">C</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="25%"></div>
+            </div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="40%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="40%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">Kotlin</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="50%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">SwiftIU</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="30%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">JavaScript</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="40%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="60%"></div>
+        </div>
+        <div class="skill"></div>
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level" data-level="60%"></div>
+        </div>
+    </div>
+    </section>
+    <!--Sección de proyectos-->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <img src="imagenes/smallcity.png" alt="Proyecto Small City">
+                <div class="project-content">
+                    <h3>Small City</h3>
+                    <p>En este proyecto, he utilizado tecnologías como HTML, CSS y JavaScript.</p>
+                    <a href="https://github.com/arnauuux/smallcitydiw" class="btn">Ver en GitHub</a>
                 </div>
             </div>
-        </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <img src="imagenes/smallcity.png" alt="Proyecto Small City">
-                    <div class="project-content">
-                        <h3>Small City</h3>
-                        <p>En este proyecto, he utilizado tecnologías como HTML, CSS y JavaScript.</p>
-                        <a href="https://github.com/arnauuux/smallcitydiw" class="btn">Ver en GitHub</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="imagenes/speakcat.png" alt="Proyecto SpeakCat">
-                    <div class="project-content">
-                        <h3>SpeakCat</h3>
-                        <p>Es una plataforma interactiva y educativa para aprender el idioma catalán. Con diferentes franjas de nivel un basico intermedio y avanzado.</p>
-                        <a href="https://github.com/arnauuux/SpeakCatDef/" class="btn">Ver en GitHub</a>
-                        <a href="docs/app-release.apk" class="btn2">Descargar Android</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="imagenes/tetris.png" alt="Proyecto Tetris">
-                    <div class="project-content">
-                        <h3>Tetris</h3>
-                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
-                        <a href="https://github.com/arnauuux/Tetris" class="btn">Ver en GitHub</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="imagenes/tictactoe.png" alt="Proyecto TicTacToe">
-                    <div class="project-content">
-                        <h3>TicTacToe</h3>
-                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
-                        <a href="https://github.com/arnauuux/TicTacToe" class="btn">Ver en GitHub</a>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <img src="imagenes/biblioteca.png" alt="Proyecto Biblioteca">
-                    <div class="project-content">
-                        <h3>Biblioteca</h3>
-                        <p>En este proyecto, he utilizado Java Swing para hacerlo con interfaz gráfica.</p>
-                        <a href="https://github.com/arnauuux/Biblioteca" class="btn">Ver en GitHub</a>
-                    </div>
+            <div class="project-item">
+                <img src="imagenes/speakcat.png" alt="Proyecto SpeakCat">
+                <div class="project-content">
+                    <h3>SpeakCat</h3>
+                    <p>Es una plataforma interactiva y educativa para aprender el idioma catalán. Con diferentes franjas de nivel un basico intermedio y avanzado.</p>
+                    <a href="https://github.com/arnauuux/SpeakCatDef/" class="btn">Ver en GitHub</a>
+                    <a href="docs/app-release.apk" class="btn2">Descargar Android</a>
                 </div>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme a través de los siguientes medios:</p>
-            <div class="contact-buttons">
-                <a href="mailto:arnauux@icloud.com" class="btn email">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email Logo">
-                    Email
-                </a>
-                <a href="https://www.linkedin.com/in/arnauux/" class="btn linkedin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
-                    LinkedIn
-                </a>
-                <a href="https://github.com/arnauuux" class="btn github">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
-                    GitHub
-                </a>
+            <div class="project-item">
+                <img src="imagenes/tetris.png" alt="Proyecto Tetris">
+                <div class="project-content">
+                    <h3>Tetris</h3>
+                    <p>En este proyecto, he utilizado Java Swing 
+                        para hacerlo con interfaz grafica.</p>
+                    <a href="https://github.com/arnauuux/Tetris" class="btn">Ver en GitHub</a>
+                </div>
             </div>
-        </section>
+        </div>
+        <div class="project-item">
+                <img src="imagenes/tictactoe.png" alt="Proyecto TicTacToe">
+                <div class="project-content">
+                    <h3>TicTacToe</h3>
+                    <p>En este proyecto, he utilizado Java Swing 
+                        para hacerlo con interfaz grafica.</p>
+                    <a href="https://github.com/arnauuux/TicTacToe" class="btn">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+                <img src="imagenes/bibloteca.png" alt="Proyecto Biblioteca">
+                <div class="project-content">
+                    <h3>Biblioteca</h3>
+                    <p>En este proyecto, he utilizado Java Swing 
+                        para hacerlo con interfaz grafica.</p>
+                    <a href="https://github.com/arnauuux/Biblioteca" class="btn">Ver en GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de los siguientes medios:</p>
+        <div class="contact-buttons">
+            <a href="mailto:arnauux@icloud.com" class="btn email">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email Logo">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/arnauux/" class="btn linkedin">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+                LinkedIn
+            </a>
+            <a href="https://github.com/arnauuux" class="btn github">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Logo">
+                GitHub
+            </a>
+        </div>
+    </section>
     </main>
     <footer>
         <p>&copy; 2024 Arnau Argullós. Todos los derechos reservados.</p>
