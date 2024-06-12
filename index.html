@@ -6,12 +6,13 @@
     <title>Portafolio de Arnau Argullós</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <img src="imagenes/arnauux.jpg" alt="Foto de Arnau Argullós" class="header-image">
         <div class="typewriter-container">
-            <h1 class="intro-text">Hola soy, </h1>
+            <h1 class="intro-text">Hola, soy</h1>
             <h1 id="typewriter">
                 <span class="typewriter-text"></span>
                 <span class="cursor"></span>
@@ -36,49 +37,49 @@
         <section id="skills">
             <h2>Habilidades</h2>
             <div class="skills-container">
-                <div class="skill">
+                <div class="skill" data-aos="fade-up">
                     <div class="skill-name">C</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="25%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="100">
                     <div class="skill-name">Java</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="40%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="200">
                     <div class="skill-name">Python</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="40%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-name">Kotlin</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="50%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="400">
                     <div class="skill-name">SwiftUI</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="30%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="500">
                     <div class="skill-name">JavaScript</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="40%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="600">
                     <div class="skill-name">HTML</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="60%"></div>
                     </div>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-up" data-aos-delay="700">
                     <div class="skill-name">CSS</div>
                     <div class="skill-bar">
                         <div class="skill-level" data-level="60%"></div>
@@ -89,7 +90,7 @@
         <section id="projects">
             <h2>Proyectos</h2>
             <div class="project-list">
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up">
                     <img src="imagenes/smallcity.png" alt="Proyecto Small City">
                     <div class="project-content">
                         <h3>Small City</h3>
@@ -97,7 +98,7 @@
                         <a href="https://github.com/arnauuux/smallcitydiw" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
                     <img src="imagenes/speakcat.png" alt="Proyecto SpeakCat">
                     <div class="project-content">
                         <h3>SpeakCat</h3>
@@ -106,7 +107,7 @@
                         <a href="docs/app-release.apk" class="btn2">Descargar Android</a>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
                     <img src="imagenes/tetris.png" alt="Proyecto Tetris">
                     <div class="project-content">
                         <h3>Tetris</h3>
@@ -114,7 +115,7 @@
                         <a href="https://github.com/arnauuux/Tetris" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up" data-aos-delay="300">
                     <img src="imagenes/tictactoe.png" alt="Proyecto TicTacToe">
                     <div class="project-content">
                         <h3>TicTacToe</h3>
@@ -122,7 +123,7 @@
                         <a href="https://github.com/arnauuux/TicTacToe" class="btn">Ver en GitHub</a>
                     </div>
                 </div>
-                <div class="project-item">
+                <div class="project-item" data-aos="fade-up" data-aos-delay="400">
                     <img src="imagenes/bibloteca.png" alt="Proyecto Biblioteca">
                     <div class="project-content">
                         <h3>Biblioteca</h3>
@@ -154,6 +155,10 @@
     <footer>
         <p>&copy; 2024 Arnau Argullós. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
