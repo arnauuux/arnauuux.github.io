@@ -1,267 +1,348 @@
-/* Body Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #121212;
-    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
 }
-
-/* Header Styles */
 header {
-    background-color: #1F1B24;
-    padding: 50px 0;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
     text-align: center;
+    position: relative;
 }
-
-.header-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .header-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 20px;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
-
-.name {
-    font-size: 36px;
-    margin: 0;
+nav {
+    margin: 1rem 0;
+    text-align: center;
 }
-
-.highlight {
-    color: #FF4081;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #FFEB3B;
-    margin: 0;
-}
-
-.welcome {
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.contact {
-    font-size: 14px;
-    margin-top: 10px;
-}
-
-.contact a {
-    color: #03A9F4;
+nav a {
+    margin: 0 1rem;
+    color: #333;
     text-decoration: none;
 }
-
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+h1, h2 {
+    color: #333;
+    margin-top: 1rem;
+    white-space: nowrap;
+}
 .btn-download {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #FF4081;
-    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
+    transition: background-color 0.3s;
 }
-
-.social-links {
+.btn-download:hover {
+    background-color: #218838;
+}
+.dev {
+    margin-top: 2rem;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
     margin-top: 20px;
+    /* Ajusta la separación desde la parte superior */
 }
-
-.social-link {
+/* Añade espacio adicional desde la parte inferior para evitar solapamiento con la sección de contacto */
+#contact {
+    margin-bottom: 100px;
+}
+h1 {
+    color: #f4f4f4;
+}
+.typewriter-container {
+    text-align: center;
+    height: 2.5rem;
+    /* Asegura que el contenedor tiene una altura fija */
+}
+.intro-text,
+#typewriter {
     display: inline-block;
-    margin: 0 10px;
+    vertical-align: middle;
+    /* Alinea verticalmente los elementos */
 }
-
-.social-link img {
-    width: 30px;
-    height: 30px;
+.intro-text {
+    font-size: 2.0rem;
+    /* Tamaño de fuente */
+    margin-right: 0.3rem;
+    /* Espacio entre "Hola soy," y el nombre */
+    margin-bottom: -3;
+    /* Elimina el margen inferior para evitar espacio adicional */
 }
-
-/* Navigation Styles */
-nav {
-    background-color: #1F1B24;
-    padding: 10px 0;
-    text-align: center;
+#typewriter {
+    font-size: 2.0rem;
+    /* Tamaño de fuente */
+    position: relative;
 }
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.typewriter-text, .cursor {
+    display: inline-block;
+    /* Asegura que el texto animado y el cursor están en línea */
+    vertical-align: middle;
+    /* Alineación vertical media */
 }
-
-.menu li {
-    display: inline;
+.cursor {
+    border-right: 0.15em solid orange;
+    /* Efecto de cursor */
+    animation: blink-caret 0.75s step-end infinite;
 }
-
-.menu a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 14px;
-    padding: 10px 15px;
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    /* Cursor transparente */
+    50% { border-color: orange; }
+    /* Color del cursor */
 }
-
-.menu a:hover {
-    background-color: #FF4081;
-    border-radius: 5px;
+#skills {
+    padding: 2rem;
+    background-color: #fff;
 }
-
-/* Main Section Styles */
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 50px;
-}
-
-h2 {
-    font-size: 28px;
-    color: #FF4081;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .skill {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px;
-    background-color: #1F1B24;
-    padding: 10px;
-    border-radius: 5px;
+    margin-bottom: 1rem;
 }
-
 .skill-name {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
-
 .skill-bar {
-    background-color: #333333;
-    height: 10px;
+    background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
+    position: relative;
 }
-
 .skill-level {
-    background-color: #FF4081;
-    height: 100%;
+    background-color: #28a745;
+    height: 1.5rem;
+    border-radius: 5px 0 0 5px;
     width: 0;
-    transition: width 1s ease;
+    transition: width 2s ease-in-out;
 }
-
+/* Proyectos */
+#projects {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #218838;
+}
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Alinea los proyectos a la izquierda */
+    gap: 20px;
+    /* Espacio entre los proyectos */
 }
-
 .project-item {
-    width: 100%;
-    max-width: 400px;
-    margin: 10px;
-    background-color: #1F1B24;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: calc(33.333% - 20px);
+    /* Calcula el ancho de cada proyecto */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
 }
-
+.project-item:hover {
+    transform: translateY(-10px);
+}
 .project-item img {
     width: 100%;
-    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
 }
-
 .project-content {
-    margin-top: 10px;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
 }
-
-.project-content h3 {
-    font-size: 20px;
+.project-item h3 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
-
-.project-content p {
-    font-size: 14px;
-    margin-bottom: 10px;
+.project-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
-
-.btn {
-    background-color: #FF4081;
-    color: #FFFFFF;
-    text-decoration: none;
+.project-item .btn2 {
+    display: inline-block;
+    margin-top: 5px;
     padding: 10px 20px;
+    border: 2px solid #1eb500;
     border-radius: 5px;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.btn2 {
-    background-color: #03A9F4;
-    color: #FFFFFF;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
+    color: #00b51e;
+    font-weight: 600;
+    transition: all;
 }
-
-/* Contact Section Styles */
+.project-item .btn2:hover {
+    background-color: #1eb500;
+    color: #fff;
+}
+.project-item .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #0077b5;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0077b5;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.project-item .btn:hover {
+    background-color: #0077b5;
+    color: #fff;
+}
+/*Contacto*/
 .contact-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+.btn:hover {
+    border-color: #000;
+    background-color: #f0f0f0;
+}
+
+.btn:hover img {
+    transform: scale(1.1);
+}
+
+/* Specific button styles */
+.btn.email {
+    background-color: #0073c5;
+    color: white;
+}
+
+.btn.linkedin {
+    background-color: #0077b5;
+    color: white;
+}
+
+.btn.github {
+    background-color: #333;
+    color: white;
+}
+
+.btn.email:hover {
+    background-color: #005bb5;
+}
+
+.btn.linkedin:hover {
+    background-color: #005a8c;
+}
+
+.btn.github:hover {
+    background-color: #24292e;
+}
+
+/*Menu hove */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
-.contact-buttons .btn {
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #FF4081;
-    color: #FFFFFF;
+nav .menu li {
+    margin: 0 15px;
+}
+
+nav .menu a {
     text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav .menu a:hover {
+    background-color: green;
+    color: white;
     border-radius: 5px;
-    font-size: 14px;
 }
 
-.contact-buttons .btn img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-
-.contact-buttons .btn.email {
-    background-color: #FF4081;
-}
-
-.contact-buttons .btn.linkedin {
-    background-color: #03A9F4;
-}
-
-.contact-buttons .btn.github {
-    background-color: #FFFFFF;
-    color: #000000;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1F1B24;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
+/* Estilos específicos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+    .header-image {
+        width: 100px;
+        height: 100px;
+    }
+    .intro-text, #typewriter {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .typewriter-container {
+        height: auto;
+    }
+    .intro-text {
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+    #typewriter {
+        font-size: 1.5rem;
+    }
+    .cursor {
+        display: none; /* Oculta el cursor en pantallas pequeñas */
+    }
+    nav .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav .menu li {
+        margin: 10px 0;
+    }
+    .project-list {
+        justify-content: center;
+    }
+    .project-item {
+        width: calc(50% - 10px);
+    }
 }
