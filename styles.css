@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f4f4f4;
 }
@@ -19,6 +19,10 @@ header {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+.header-image:hover {
+    transform: scale(1.1);
 }
 nav {
     margin: 1rem 0;
@@ -28,321 +32,180 @@ nav a {
     margin: 0 1rem;
     color: #333;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #007BFF;
+}
+.intro-text {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0;
+}
+#typewriter {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.dev {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.typewriter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.typewriter-text {
+    border-right: 2px solid #fff;
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { background-color: #fff; }
+    50% { background-color: transparent; }
+    100% { background-color: #fff; }
+}
+main {
+    flex-grow: 1;
+    padding: 2rem;
 }
 section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    color: #333;
     margin-bottom: 1rem;
 }
-h1, h2 {
-    color: #333;
-    margin-top: 1rem;
-    white-space: nowrap;
+p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 .btn-download {
     display: inline-block;
-    padding: 0.5rem 1rem;
     margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn-download:hover {
+    background-color: #0056b3;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.skill {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.skill-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.skill-level {
+    height: 100%;
+    background-color: #007BFF;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.project-item {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.project-item img {
+    width: 100%;
+    object-fit: cover;
+}
+.project-content {
+    padding: 1rem;
+}
+.project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.project-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+.btn2 {
+    display: inline-block;
+    padding: 0.5rem 1rem;
     background-color: #28a745;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
-.btn-download:hover {
+.btn2:hover {
     background-color: #218838;
 }
-.dev {
-    margin-top: 2rem;
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-buttons .btn {
+    margin: 0.5rem;
+}
+.contact-buttons .btn img {
+    width: 20px;
+    margin-right: 0.5rem;
 }
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 20px;
-    /* Ajusta la separación desde la parte superior */
-}
-/* Añade espacio adicional desde la parte inferior para evitar solapamiento con la sección de contacto */
-#contact {
-    margin-bottom: 100px;
-}
-h1 {
-    color: #f4f4f4;
-}
-.typewriter-container {
-    text-align: center;
-    height: 2.5rem;
-    /* Asegura que el contenedor tiene una altura fija */
-}
-.intro-text,
-#typewriter {
-    display: inline-block;
-    vertical-align: middle;
-    /* Alinea verticalmente los elementos */
-}
-.intro-text {
-    font-size: 2.0rem;
-    /* Tamaño de fuente */
-    margin-right: 0.3rem;
-    /* Espacio entre "Hola soy," y el nombre */
-    margin-bottom: -3;
-    /* Elimina el margen inferior para evitar espacio adicional */
-}
-#typewriter {
-    font-size: 2.0rem;
-    /* Tamaño de fuente */
-    position: relative;
-}
-.typewriter-text, .cursor {
-    display: inline-block;
-    /* Asegura que el texto animado y el cursor están en línea */
-    vertical-align: middle;
-    /* Alineación vertical media */
-}
-.cursor {
-    border-right: 0.15em solid orange;
-    /* Efecto de cursor */
-    animation: blink-caret 0.75s step-end infinite;
-}
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    /* Cursor transparente */
-    50% { border-color: orange; }
-    /* Color del cursor */
-}
-#skills {
-    padding: 2rem;
-    background-color: #fff;
-}
-.skill {
-    margin-bottom: 1rem;
-}
-.skill-name {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-.skill-bar {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-}
-.skill-level {
-    background-color: #28a745;
-    height: 1.5rem;
-    border-radius: 5px 0 0 5px;
-    width: 0;
-    transition: width 2s ease-in-out;
-}
-/* Proyectos */
-#projects {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #f1f1f1;
-}
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #218838;
-}
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    /* Alinea los proyectos a la izquierda */
-    gap: 20px;
-    /* Espacio entre los proyectos */
-}
-.project-item {
-    width: calc(33.333% - 20px);
-    /* Calcula el ancho de cada proyecto */
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-.project-item:hover {
-    transform: translateY(-10px);
-}
-.project-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.project-content {
-    padding: 20px;
-    text-align: left;
-}
-.project-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-.project-item p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.project-item .btn2 {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 10px 20px;
-    border: 2px solid #1eb500;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #00b51e;
-    font-weight: 600;
-    transition: all;
-}
-.project-item .btn2:hover {
-    background-color: #1eb500;
-    color: #fff;
-}
-.project-item .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #0077b5;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #0077b5;
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-.project-item .btn:hover {
-    background-color: #0077b5;
-    color: #fff;
-}
-/*Contacto*/
-.contact-buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-.btn {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-.btn img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-}
-.btn:hover {
-    border-color: #000;
-    background-color: #f0f0f0;
-}
-
-.btn:hover img {
-    transform: scale(1.1);
-}
-
-/* Specific button styles */
-.btn.email {
-    background-color: #0073c5;
-    color: white;
-}
-
-.btn.linkedin {
-    background-color: #0077b5;
-    color: white;
-}
-
-.btn.github {
-    background-color: #333;
-    color: white;
-}
-
-.btn.email:hover {
-    background-color: #005bb5;
-}
-
-.btn.linkedin:hover {
-    background-color: #005a8c;
-}
-
-.btn.github:hover {
-    background-color: #24292e;
-}
-
-/*Menu hove */
-header {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-nav .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav .menu li {
-    margin: 0 15px;
-}
-
-nav .menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-nav .menu a:hover {
-    background-color: green;
-    color: white;
-    border-radius: 5px;
-}
-
-/* Estilos específicos para pantallas pequeñas */
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 1rem;
-    }
-    .header-image {
-        width: 100px;
-        height: 100px;
-    }
-    .intro-text, #typewriter {
-        display: block;
-        margin-bottom: 0.5rem;
-        text-align: center;
-    }
-    .typewriter-container {
-        height: auto;
-    }
-    .intro-text {
-        font-size: 1.5rem;
-        margin-right: 0;
-    }
-    #typewriter {
-        font-size: 1.5rem;
-    }
-    .cursor {
-        display: none; /* Oculta el cursor en pantallas pequeñas */
-    }
-    nav .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    nav .menu li {
-        margin: 10px 0;
-    }
-    .project-list {
-        justify-content: center;
-    }
-    .project-item {
-        width: calc(50% - 10px);
-    }
 }
