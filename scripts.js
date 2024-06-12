@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-    const text = "Arnau Argullós";
+    const text = "soy Arnau Argullós";
     const speed = 100; // Velocidad de escritura en milisegundos
 
     function typeWriter() {
